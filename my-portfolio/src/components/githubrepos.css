@@ -1,10 +1,21 @@
+.repo-container {
+    background-color: #470D0B;
+    margin: 0;
+    padding: 10px;
+}
+
+.repo-container h2 {
+    color: #dadada;
+    margin: 0;
+}
+
 .repo-list {
     list-style: none;
     padding: 0;
 }
 
 .repo-item {
-    background-color: #470D0B;
+    background-color: #350A08;
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 10px;
