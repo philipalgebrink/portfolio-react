@@ -4,11 +4,19 @@ import './githubrepos.css';
 
 // Repo additional descriptions
 const repoDescriptions = {
-    'grupp-1-react': 'A website designed for mobile device that handles your creditcards. (School project)',
-    'Philip_FE23_flexboxMania': 'A website showcasing my flexbox skills (School project)',
-    'Philip_FE23_individuell-examination': 'A website showcasing I know how to use grid and flexbox. (School project)',
-    'Solaris-individuell-examination': 'A website showcasing I know how to use javascript and API to fetch information of our solarsystem. (School project)',
-    'grupp-8-flickr-api': 'A website showcasing I know how to use javascript, API and lightbox. In this case we used API from Flickr to fetch pictures on searching results. (School project)'
+    'grupp-1-react': 'A website designed for mobile device that handles your creditcards.',
+    'Philip_FE23_flexboxMania': 'A website showcasing my flexbox skills.',
+    'Philip_FE23_individuell-examination': 'A website showcasing I know how to use grid and flexbox.',
+    'Solaris-individuell-examination': 'A website showcasing I know how to use javascript and API to fetch information of our solarsystem.',
+    'grupp-8-flickr-api': 'A website showcasing I know how to use javascript, API and lightbox. In this case we used API from Flickr to fetch pictures on searching results.'
+};
+
+const repoNames = {
+    'grupp-1-react': 'E-Wallet (School project)',
+    'Philip_FE23_flexboxMania': 'Flexbox Mania (School project)',
+    'Philip_FE23_individuell-examination': 'Flexbox and Grid Mania (School project)',
+    'Solaris-individuell-examination': 'Our Solarsystem (School project)',
+    'grupp-8-flickr-api': 'Flickr Image Search (School project)'
 };
 
 const GitHubRepos = ({ username }) => {
@@ -28,18 +36,22 @@ const GitHubRepos = ({ username }) => {
     }, [username]);
 
     return (
-        <div className='repo-container'>
-            <h2>My GitHub Repositories</h2>
-            <ul className="repo-list">
-                {repos.map(repo => (
-                    <li key={repo.id} className="repo-item">
-                        <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="repo-name">{repo.name}</a>
-                        {repoDescriptions[repo.name] && (
-                            <p className="repo-description">{repoDescriptions[repo.name]}</p>
-                        )}
-                    </li>
-                ))}
-            </ul>
+        <div className='repo'>
+            <div className='repo-container'>
+                <h2>My GitHub Repositories</h2>
+                <ul className="repo-list">
+                    {repos.map(repo => (
+                        <li key={repo.id} className="repo-item">
+                            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="repo-name">
+                                {repoNames[repo.name] || repo.name}
+                            </a>
+                            {repoDescriptions[repo.name] && (
+                                <p className="repo-description">{repoDescriptions[repo.name]}</p>
+                            )}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 };
