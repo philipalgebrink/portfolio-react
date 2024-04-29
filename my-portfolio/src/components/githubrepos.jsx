@@ -7,7 +7,8 @@ const repoDescriptions = {
     'grupp-1-react': 'A website designed for mobile device that handles your creditcards. (School project)',
     'Philip_FE23_flexboxMania': 'A website showcasing my flexbox skills (School project)',
     'Philip_FE23_individuell-examination': 'A website showcasing I know how to use grid and flexbox. (School project)',
-    'Solaris-individuell-examination': 'A website showcasing I know how to use javascript and API to fetch information of our solarsystem. (School project)'
+    'Solaris-individuell-examination': 'A website showcasing I know how to use javascript and API to fetch information of our solarsystem. (School project)',
+    'grupp-8-flickr-api': 'A website showcasing I know how to use javascript, API and lightbox. In this case we used API from Flickr to fetch pictures on searching results. (School project)'
 };
 
 const GitHubRepos = ({ username }) => {
