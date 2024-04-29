@@ -1,0 +1,10 @@
+.about-me {
+    padding: 20px;
+    background-color: #470D0B;
+    color: #dadada;
+}
+
+.about-me-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
