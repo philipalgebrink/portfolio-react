@@ -3,21 +3,30 @@ import axios from 'axios';
 import './githubrepos.css';
 
 // Repo additional descriptions
-const repoDescriptions = {
-    'grupp-1-react': 'A website designed for mobile device that handles your creditcards.',
-    'Philip_FE23_flexboxMania': 'A website showcasing my flexbox skills.',
-    'Philip_FE23_individuell-examination': 'A website showcasing I know how to use grid and flexbox.',
-    'Solaris-individuell-examination': 'A website showcasing I know how to use javascript and API to fetch information of our solarsystem.',
-    'grupp-8-flickr-api': 'A website showcasing I know how to use javascript, API and lightbox. In this case we used API from Flickr to fetch pictures on searching results.'
-};
 
-const repoNames = {
-    'grupp-1-react': 'E-Wallet (School project)',
-    'Philip_FE23_flexboxMania': 'Flexbox Mania (School project)',
-    'Philip_FE23_individuell-examination': 'Flexbox and Grid Mania (School project)',
-    'Solaris-individuell-examination': 'Our Solarsystem (School project)',
-    'grupp-8-flickr-api': 'Flickr Image Search (School project)'
-};
+const repositoryMappings = {
+    'grupp-1-react': {
+        displayName: 'E-Wallet (School project)',
+        description: 'A website designed for mobile device that handles your creditcards.',
+        url: 'https://philipalgebrink-ewallet.netlify.app/',
+    },
+    'Philip_FE23_flexboxMania': {
+        displayName: 'Flexbox Mania (School project)',
+        description: 'A website showcasing my flexbox skills.',
+    },
+    'Philip_FE23_individuell-examination': {
+        displayName: 'Flexbox and Grid Mania (School project)',
+        description: 'A website showcasing I know how to use grid and flexbox.',
+    },
+    'Solaris-individuell-examination': {
+        displayName: 'Our Solarsystem (School project)',
+        description: 'A website showcasing I know how to use javascript and API to fetch information of our solarsystem.',
+    },
+    'grupp-8-flickr-api': {
+        displayName: 'Flickr Image Search (School project)',
+        description: 'A website showcasing I know how to use javascript, API and lightbox. In this case we used API from Flickr to fetch pictures on searching results.',
+    },
+}
 
 const GitHubRepos = ({ username }) => {
     const [repos, setRepos] = useState([]);
@@ -42,11 +51,11 @@ const GitHubRepos = ({ username }) => {
                 <ul className="repo-list">
                     {repos.map(repo => (
                         <li key={repo.id} className="repo-item">
-                            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="repo-name">
-                                {repoNames[repo.name] || repo.name}
+                            <a href={repositoryMappings[repo.name]?.url || `https://${username}.github.io/${repo.name}`} target="_blank" rel="noopener noreferrer" className="repo-name">
+                                {repositoryMappings[repo.name]?.displayName || repo.name}
                             </a>
-                            {repoDescriptions[repo.name] && (
-                                <p className="repo-description">{repoDescriptions[repo.name]}</p>
+                            {repositoryMappings[repo.name]?.description && (
+                                <p className="repo-description">{repositoryMappings[repo.name]?.description}</p>
                             )}
                         </li>
                     ))}
