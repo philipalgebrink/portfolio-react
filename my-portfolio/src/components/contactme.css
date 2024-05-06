@@ -1,12 +1,54 @@
 .contact-me {
-    padding: 20px;
     background-color: #470D0B;
-    color: #dadada;
-    margin: 0;
     min-height: 100vh;
 }
 
 .contact-me-content {
+    padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.contact-me-content h2 {
+    color: #dadada;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #dadada;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    background-color: #350A08;
+    color: #dadada;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #dadada;
+    color: #470D0B;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #a3a3a3;
 }
