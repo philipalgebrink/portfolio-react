@@ -23,3 +23,8 @@
 .header-link:hover {
     background-color: #58110E;
 }
+
+.header-link.active {
+    background-color: #58110E;
+    color: #fff;
+}
