@@ -18,7 +18,12 @@ function App() {
                 <Routes>
                     <Route path="/" element={<AboutMe />} />
                     <Route path="/github" element={<GitHubRepos username={githubUsername} />} />
-                    <Route path="/games" element={<GameShowcase />} />
+                    <Route path="/games" element={<GameShowcase
+                        title="Don't worry child"
+                        description="A game I made during my gamemaker course."
+                        imageUrl="https://img.itch.zone/aW1nLzkyNTkzMzIucG5n/347x500/iOeSTy.png"
+                        gameLink="https://cyranolua.itch.io/dont-worry-child" />}
+                    />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
                 <Footer />
