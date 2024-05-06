@@ -8,7 +8,6 @@ export const setRepositories = (repos) => ({
 });
 
 export const fetchRepositories = (username) => async (dispatch) => {
-    console.log("Fetching GitHub repositories for username:", username); // Log when the action is dispatched
     try {
         const response = await axios.get(`https://api.github.com/users/${username}/repos`);
         dispatch(setRepositories(response.data));

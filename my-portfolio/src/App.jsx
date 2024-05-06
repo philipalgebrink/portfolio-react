@@ -15,10 +15,8 @@ function App() {
     const githubUsername = 'philipalgebrink';
 
     useEffect(() => {
-        console.log("useEffect in App component running");
         // Fetch repositories when the component mounts
-        store.dispatch(fetchRepositories(githubUsername))
-            .catch(error => console.error('Error fetching GitHub repositories:', error));
+        store.dispatch(fetchRepositories(githubUsername));
     }, []);
 
     return (
