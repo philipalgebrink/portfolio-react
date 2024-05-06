@@ -4,6 +4,7 @@ import Header from './components/header';
 import AboutMe from './components/aboutme';
 import GitHubRepos from './components/githubrepos';
 import GameShowcase from './components/gameshowcase';
+import Contact from './components/contactme';
 import Footer from './components/footer';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/" element={<AboutMe />} />
                     <Route path="/github" element={<GitHubRepos username={githubUsername} />} />
                     <Route path="/games" element={<GameShowcase />} />
+                    <Route path="/contact" element={<Contact />} />
                 </Routes>
                 <Footer />
             </div>
