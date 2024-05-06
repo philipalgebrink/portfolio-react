@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useSelector } from 'react-redux';
+
 import './githubrepos.css';
 
 // Repo additional descriptions
@@ -29,20 +31,7 @@ const repositoryMappings = {
 }
 
 const GitHubRepos = ({ username }) => {
-    const [repos, setRepos] = useState([]);
-
-    useEffect(() => {
-        const fetchRepos = async () => {
-            try {
-                const response = await axios.get(`https://api.github.com/users/${username}/repos`);
-                setRepos(response.data);
-            } catch (error) {
-                console.error('Error fetching GitHub repositories:', error);
-            }
-        };
-
-        fetchRepos();
-    }, [username]);
+    const repos = useSelector(state => state.repositories.repositories);
 
     return (
         <div className='repo'>
