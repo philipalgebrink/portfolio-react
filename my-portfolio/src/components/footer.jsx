@@ -6,7 +6,6 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <p>© 2024 Philip Älgebrink. All rights reserved.</p>
-                <p>Contact: philipalgebrink.pa@gmail.com</p>
             </div>
         </footer>
     );
