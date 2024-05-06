@@ -1,5 +1,6 @@
 .game {
     background-color: #470D0B;
+    min-height: 100vh;
 }
 
 .game-container {
