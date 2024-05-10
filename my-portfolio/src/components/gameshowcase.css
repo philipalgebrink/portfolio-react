@@ -39,6 +39,7 @@
     text-decoration: underline;
     cursor: pointer;
     max-width: 200px;
+    font-size: 16px;
 }
 
 .game-description {

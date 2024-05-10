@@ -30,6 +30,7 @@
 .repo-name {
     font-weight: bold;
     color: #dadada;
+    font-size: 16px;
 }
 
 .repo-description {

@@ -1,12 +1,33 @@
 .about-me {
-    padding: 20px;
     background-color: #470D0B;
-    color: #dadada;
-    margin: 0;
     min-height: 100vh;
 }
 
 .about-me-content {
+    padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.about-me h2 {
+    color: #dadada;
+}
+
+.about-me-item {
+    background-color: #350A08;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.about-me-name {
+    font-weight: bold;
+    color: #dadada;
+    margin: 0;
+    font-size: 16px;
+}
+
+.about-me-description {
+    margin-top: 5px;
+    color: #a3a3a3;
 }
