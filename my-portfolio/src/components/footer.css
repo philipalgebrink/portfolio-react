@@ -1,12 +1,10 @@
 .footer {
-    background-color: #350A08;
-    color: #dadada;
+    background-color: rgba(37, 99, 235, 0.7); /* Semi-transparent blue */
+    color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     padding: 20px;
     text-align: center;
-    margin-top: auto;
-}
-
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    width: 100%;
+  }
+  

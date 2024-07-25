@@ -1,16 +1,25 @@
 .contact-me {
-    background-color: #470D0B;
+    background-color: #1f2937; /* Dark gray */
     min-height: 100vh;
+    padding: 100px 20px 20px; /* Added padding to the top to ensure it starts further down */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 64px;
 }
 
 .contact-me-content {
+    background-color: rgba(37, 99, 235, 0.2); /* Semi-transparent blue */
     padding: 20px;
+    border-radius: 8px;
     max-width: 800px;
     margin: 0 auto;
+    backdrop-filter: blur(10px); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .contact-me-content h2 {
-    color: #dadada;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .form-group {
@@ -18,7 +27,7 @@
 }
 
 .form-group label {
-    color: #dadada;
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 5px;
     display: block;
 }
@@ -29,9 +38,10 @@ textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #dadada;
-    background-color: #350A08;
-    color: #dadada;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(37, 99, 235, 0.2); /* Semi-transparent blue */
+    color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); /* Glass effect */
 }
 
 textarea {
@@ -39,8 +49,8 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #dadada;
-    color: #470D0B;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1f2937;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -50,5 +60,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #a3a3a3;
+    background-color: rgba(255, 255, 255, 0.6);
 }

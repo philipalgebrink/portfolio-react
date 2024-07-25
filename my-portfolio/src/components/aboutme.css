@@ -1,33 +1,32 @@
 .about-me {
-    background-color: #470D0B;
+    background-color: #1f2937; /* Dark gray */
     min-height: 100vh;
+    padding: 100px 20px 20px; /* Added padding to the top to ensure it starts further down */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 64px;
 }
 
 .about-me-content {
+    background-color: rgba(37, 99, 235, 0.2);
     padding: 20px;
+    border-radius: 8px;
     max-width: 800px;
     margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .about-me h2 {
-    color: #dadada;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .about-me-item {
-    background-color: #350A08;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.about-me-name {
-    font-weight: bold;
-    color: #dadada;
-    margin: 0;
-    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .about-me-description {
-    margin-top: 5px;
-    color: #a3a3a3;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
 }
