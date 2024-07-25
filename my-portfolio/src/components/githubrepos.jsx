@@ -26,6 +26,10 @@ const repositoryMappings = {
         displayName: 'Flickr Image Search (School project)',
         description: 'A website showcasing I know how to use JavaScript, API, and lightbox. In this case, we used API from Flickr to fetch pictures on search results.',
     },
+    'Airbean-API': {
+        displayName: 'Airbean API (Only Backend)',
+        description: 'This is a project involving creating a backend API for the Airbean web application, where users can order coffee and have it delivered via drone.',
+    },
 };
 
 const GitHubRepos = ({ username }) => {
