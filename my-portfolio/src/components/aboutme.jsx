@@ -24,7 +24,7 @@ const AboutMe = () => {
                         I have a burning interest for making something from nothing, which is why I chose this path.<br />
                         I've also studied 1 year of Gamemaker where I worked in Unity and C#.<br />
                         Right now I'm learning about React.js which is what I use for this portfolio!<br />
-                        Test.
+                        I'm also learning Vue in other projects which will be in my github repos eventually.
                     </p>
                 </motion.div>
             </div>
